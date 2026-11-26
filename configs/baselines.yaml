@@ -1,0 +1,39 @@
+# Phase 4 baseline settings (implementation_plan.md, §2.4, §4.3). Values mirror the authors'
+# scripts/retrival.py: retriv defaults, top-100 tables, exact dense search.
+
+seed: 42
+processed_dir: data/processed
+scores_dir: cache/scores           # full question x table score matrices, reused in Phase 5
+retriv_dir: cache/retriv           # retriv index storage
+results_dir: results
+cutoff: 100                        # tables kept per question before database ranking (D8)
+
+# Spider-syn and Spider-realistic share Spider's database collection (§2.1).
+collections:
+  spider: spider
+  spider_syn: spider
+  spider_realistic: spider
+  bird: bird
+  fiben: fiben
+
+methods:
+  bm25:
+    # retriv SparseRetriever defaults: Okapi BM25, lower-casing, punctuation removal,
+    # English stop words and stemming.
+    k1: 1.2
+    b: 0.75
+  sxfmr:
+    # retriv DenseRetriever as the authors called it: only `model` and `use_ann` were set, so
+    # inputs are truncated to retriv's default of 128 tokens and embeddings are normalised.
+    model: sentence-transformers/all-mpnet-base-v2
+    max_length: 128
+    normalize: true
+    batch_size: 64
+
+metrics:
+  database_ks: [1, 5]
+  table_ks: [5, 10, 15, 20]
+  full_schema_ks: [5, 15]
+
+# Validation tolerance against the paper's baseline rows (§4.4), in recall points.
+tolerance: 1.0

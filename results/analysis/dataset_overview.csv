@@ -1,0 +1,31 @@
+dataset,seed,metric,seed value,best variant,gain
+spider,bm25,DR@1,70.12,bm25-G1,5.8
+spider,bm25,pooled TR@5,85.3,bm25-G1,2.56
+spider,bm25,pooled TR@15,92.91,bm25-G2,1.91
+spider,sxfmr,DR@1,62.67,sxfmr-G1,6.0
+spider,sxfmr,pooled TR@5,79.87,sxfmr-G2,3.07
+spider,sxfmr,pooled TR@15,92.59,sxfmr-G1,0.89
+bird,bm25,DR@1,57.3,bm25-G1,17.08
+bird,bm25,pooled TR@5,65.18,bm25-G3,7.96
+bird,bm25,pooled TR@15,80.83,bm25-G1,6.21
+bird,sxfmr,DR@1,65.91,sxfmr-G1,3.19
+bird,sxfmr,pooled TR@5,64.71,sxfmr-G3,4.3
+bird,sxfmr,pooled TR@15,82.07,sxfmr-G2,4.36
+fiben,bm25,DR@1,98.92,bm25-G1,0.0
+fiben,bm25,pooled TR@5,31.81,bm25-G3,4.66
+fiben,bm25,pooled TR@15,38.08,bm25-G3,12.35
+fiben,sxfmr,DR@1,100.0,sxfmr-G1,0.0
+fiben,sxfmr,pooled TR@5,24.69,sxfmr-G2,3.71
+fiben,sxfmr,pooled TR@15,44.35,sxfmr-G2,3.51
+spider_syn,bm25,DR@1,29.21,bm25-G1,4.45
+spider_syn,bm25,pooled TR@5,44.66,bm25-G2,2.05
+spider_syn,bm25,pooled TR@15,58.79,bm25-G2,5.11
+spider_syn,sxfmr,DR@1,47.58,sxfmr-G1,8.32
+spider_syn,sxfmr,pooled TR@5,66.26,sxfmr-G2,3.71
+spider_syn,sxfmr,pooled TR@15,84.35,sxfmr-G1,1.66
+spider_realistic,bm25,DR@1,52.76,bm25-G1,3.54
+spider_realistic,bm25,pooled TR@5,67.6,bm25-G1,3.43
+spider_realistic,bm25,pooled TR@15,78.91,bm25-G2,4.95
+spider_realistic,sxfmr,DR@1,59.06,sxfmr-G1,7.67
+spider_realistic,sxfmr,pooled TR@5,79.16,sxfmr-G2,2.92
+spider_realistic,sxfmr,pooled TR@15,91.11,sxfmr-G2,1.01

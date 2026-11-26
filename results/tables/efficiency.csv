@@ -1,0 +1,9 @@
+method,build_s,query_s,QPS,disk_MB,peak_RAM_MB
+bm25,0.5,1.13,916.8,0.2,631.4
+sxfmr,8.4,4.55,227.3,441.5,1857.9
+graphrag_bm25_G1,0.4,1.21,856.5,0.2,660.8
+graphrag_bm25_G2,0.5,1.69,613.1,0.2,690.1
+graphrag_bm25_G3,0.6,2.23,464.0,0.2,697.2
+graphrag_sxfmr_G1,7.9,4.33,238.9,441.5,1854.3
+graphrag_sxfmr_G2,7.8,4.67,221.2,441.5,1971.6
+graphrag_sxfmr_G3,7.5,5.08,203.4,441.5,1977.5

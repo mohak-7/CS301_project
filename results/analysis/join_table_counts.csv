@@ -1,0 +1,6 @@
+dataset,questions with bridge tables,bridge tables,join-only tables,undetermined queries
+spider,58,64,198,2
+bird,155,168,203,0
+fiben,44,126,338,0
+spider_syn,58,64,202,2
+spider_realistic,40,46,91,2

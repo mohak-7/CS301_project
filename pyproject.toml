@@ -1,0 +1,26 @@
+[project]
+name = "cs301-schema-routing"
+version = "0.1.0"
+description = "DBCopilot vs. GraphRAG schema routing: a comparative study (CS301)."
+requires-python = ">=3.11,<3.12"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["third_party"]
+
+[tool.ruff.lint]
+# F: unused imports and names; T20: leftover print(); D: docstrings; ANN: type hints;
+# E/W: style; I: import order (implementation_plan.md, §S.3).
+select = ["E", "W", "F", "I", "T20", "D", "ANN"]
+ignore = ["ANN401"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "ANN"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

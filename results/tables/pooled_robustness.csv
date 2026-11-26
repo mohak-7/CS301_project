@@ -1,0 +1,11 @@
+,,spider_syn,spider_syn,spider_syn,spider_syn,spider_realistic,spider_realistic,spider_realistic,spider_realistic
+,,DR@1,DR@5,TR@5,TR@15,DR@1,DR@5,TR@5,TR@15
+reported,DBCopilot,62.67,85.11,70.35,86.26,79.53,95.47,87.93,96.06
+ours,bm25,29.21,57.93,44.66,58.79,52.76,81.1,67.6,78.91
+ours,sxfmr,47.58,80.95,66.26,84.35,59.06,88.78,79.16,91.11
+ours,graphrag_bm25_G1,33.66,60.15,45.75,62.49,56.3,84.06,71.03,83.48
+ours,graphrag_bm25_G2,33.66,56.87,46.71,63.9,56.3,81.69,70.9,83.86
+ours,graphrag_bm25_G3,33.66,56.87,46.71,63.9,56.1,81.69,70.9,83.86
+ours,graphrag_sxfmr_G1,55.9,82.01,68.5,86.01,66.73,89.37,81.7,91.87
+ours,graphrag_sxfmr_G2,55.8,82.01,69.97,84.86,66.34,90.55,82.08,92.12
+ours,graphrag_sxfmr_G3,55.8,82.01,69.97,84.86,66.34,90.55,82.08,92.12

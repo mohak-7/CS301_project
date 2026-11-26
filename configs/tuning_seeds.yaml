@@ -1,0 +1,23 @@
+# Seed tuning for the extension (implementation_plan.md, §9). Training questions only (D7):
+# the same sample as Phase 6 (500 Spider + 500 Bird training questions, seed 42).
+
+seed: 42
+sample_size: 500
+datasets: [spider, bird]
+objective: TR@5
+tie_breaker: DR@1
+output: configs/seeds.yaml
+results: results/tuning
+cutoff: 100
+
+hybrid_weights: [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]   # BM25 weight; dense gets 1 - w
+
+rerank:
+  model: cross-encoder/ms-marco-MiniLM-L-6-v2
+  max_length: 256
+  batch_size: 128
+  device: auto              # Apple GPU (mps) when available, otherwise CPU
+  # The first search chose top_k 30 and weight 0.25, both on a grid edge, so both grids were
+  # extended one step outward and the search was run again (training questions only).
+  top_k: [10, 20, 30, 50]   # tables reranked per question
+  weight: [0.1, 0.25, 0.5, 0.75, 1.0]   # cross-encoder weight inside the top k

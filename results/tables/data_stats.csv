@@ -1,0 +1,6 @@
+dataset,databases,tables,columns,test,train,fk_columns,mean_gold_tables,difficulty
+spider,166,876,4503,1034,7000.0,926,1.51,"{'easy': 248, 'extra': 166, 'hard': 174, 'medium': 446}"
+bird,80,597,4337,1534,9427.0,864,1.94,"{'challenging': 145, 'moderate': 464, 'simple': 925}"
+fiben,1,152,374,279,,145,3.77,{'None': 279}
+spider_syn,166,876,4503,1034,,926,1.51,"{'easy': 248, 'extra': 169, 'hard': 177, 'medium': 440}"
+spider_realistic,166,876,4503,508,,926,1.55,"{'easy': 109, 'extra': 97, 'hard': 99, 'medium': 203}"

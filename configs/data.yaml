@@ -1,0 +1,76 @@
+# Data sources for Phase 3 (implementation_plan.md, §3.2, D15).
+# Only schema and question files are downloaded (about 12 MB); database files are never fetched.
+
+raw_dir: data/raw
+processed_dir: data/processed
+third_party_dir: third_party
+nltk_dir: data/nltk_data
+
+downloads:
+  # Official Spider evaluation repository: Spider tables.json (166 databases) and the
+  # hardness code used for difficulty labels (§3.5).
+  - name: spider_tables
+    url: https://raw.githubusercontent.com/taoyds/test-suite-sql-eval/master/tables.json
+    target: spider/tables.json
+  - name: test_suite_process_sql
+    url: https://raw.githubusercontent.com/taoyds/test-suite-sql-eval/master/process_sql.py
+    target: test_suite_sql_eval/process_sql.py
+    root: third_party
+  - name: test_suite_evaluation
+    url: https://raw.githubusercontent.com/taoyds/test-suite-sql-eval/master/evaluation.py
+    target: test_suite_sql_eval/evaluation.py
+    root: third_party
+  - name: test_suite_license
+    url: https://raw.githubusercontent.com/taoyds/test-suite-sql-eval/master/LICENSE
+    target: test_suite_sql_eval/LICENSE
+    root: third_party
+
+  # Spider-Syn: each record holds the original Spider question (SpiderQuestion), the synonym
+  # question (SpiderSynQuestion), the gold SQL and db_id.
+  - name: spider_syn_dev
+    url: https://raw.githubusercontent.com/ygan/Spider-Syn/main/Spider-Syn/dev.json
+    target: spider_syn/dev.json
+  - name: spider_syn_train
+    url: https://raw.githubusercontent.com/ygan/Spider-Syn/main/Spider-Syn/train_spider.json
+    target: spider_syn/train_spider.json
+
+  # Spider-realistic (Zenodo record 5205322).
+  - name: spider_realistic
+    url: https://zenodo.org/api/records/5205322/files/spider-realistic.json/content
+    target: spider_realistic/spider-realistic.json
+  # The same Zenodo record ships the original Spider dev.json (question, query, db_id), which is
+  # the authoritative source for the Spider test questions.
+  - name: spider_dev
+    url: https://zenodo.org/api/records/5205322/files/dev.json/content
+    target: spider/dev.json
+  - name: spider_realistic_license
+    url: https://zenodo.org/api/records/5205322/files/license/content
+    target: spider_realistic/LICENSE
+
+  # Fiben: third-party copy of IBM's original files; validated against the paper's Table 2.
+  - name: fiben_schema
+    url: https://raw.githubusercontent.com/samarthsubramanya/NLP-DECODE-JOIN-FALL26/main/data/fiben/FIBEN.sql
+    target: fiben/FIBEN.sql
+  - name: fiben_queries
+    url: https://raw.githubusercontent.com/samarthsubramanya/NLP-DECODE-JOIN-FALL26/main/data/fiben/FIBEN_Queries.json
+    target: fiben/FIBEN_Queries.json
+
+# Expected statistics from the paper's Table 2 (§2.1), checked by src/check_data.py.
+expected:
+  spider: {databases: 166, tables: 876, columns: 4503, test: 1034, train: 7000}
+  bird: {databases: 80, tables: 597, columns: 4337, test: 1534, train: 9427}
+  fiben: {databases: 1, tables: 152, columns: 374, test: 279}
+  spider_syn: {databases: 166, tables: 876, columns: 4503, test: 1034}
+  spider_realistic: {databases: 166, tables: 876, columns: 4503, test: 508}
+
+# Bird archives are 8.9 GB and 346 MB, almost entirely database files. Only the listed members
+# are extracted, using HTTP range requests on the zip index.
+zip_members:
+  - url: https://bird-bench.oss-cn-beijing.aliyuncs.com/train.zip
+    members:
+      train/train.json: bird/train.json
+      train/train_tables.json: bird/train_tables.json
+  - url: https://bird-bench.oss-cn-beijing.aliyuncs.com/dev.zip
+    members:
+      dev_20240627/dev.json: bird/dev_2024.json
+      dev_20240627/dev_tables.json: bird/dev_tables.json

@@ -1,0 +1,44 @@
+# Reported numbers from the DBCopilot paper (Tables 3 and 4), copied in implementation_plan.md
+# §2.5. Baseline rows use per-question table recall; the DBCopilot row uses pooled table recall
+# (§2.3, D11). Keys: DR@k = database recall@k, TR@k = table recall@k.
+
+spider:
+  bm25:           {DR@1: 70.12, DR@5: 91.49, TR@5: 86.49, TR@15: 93.87}
+  sxfmr:          {DR@1: 62.57, DR@5: 89.46, TR@5: 80.42, TR@15: 92.39}
+  crush_bm25:     {DR@1: 72.34, DR@5: 94.49, TR@5: 87.19, TR@15: 95.06}
+  crush_sxfmr:    {DR@1: 63.25, DR@5: 91.97, TR@5: 82.21, TR@15: 93.86}
+  bm25_finetuned: {DR@1: 68.28, DR@5: 91.78, TR@5: 86.60, TR@15: 93.87}
+  dtr:            {DR@1: 61.51, DR@5: 92.84, TR@5: 76.27, TR@15: 93.18}
+  dbcopilot:      {DR@1: 85.01, DR@5: 96.42, TR@5: 91.63, TR@15: 97.51}
+bird:
+  bm25:           {DR@1: 57.11, DR@5: 90.16, TR@5: 68.32, TR@15: 82.81}
+  sxfmr:          {DR@1: 66.49, DR@5: 88.20, TR@5: 67.56, TR@15: 83.05}
+  crush_bm25:     {DR@1: 56.58, DR@5: 94.85, TR@5: 68.37, TR@15: 87.82}
+  crush_sxfmr:    {DR@1: 70.14, DR@5: 92.44, TR@5: 70.58, TR@15: 85.07}
+  bm25_finetuned: {DR@1: 60.63, DR@5: 90.48, TR@5: 69.87, TR@15: 83.34}
+  dtr:            {DR@1: 76.99, DR@5: 97.33, TR@5: 76.24, TR@15: 91.96}
+  dbcopilot:      {DR@1: 88.92, DR@5: 97.13, TR@5: 85.83, TR@15: 94.59}
+fiben:
+  bm25:           {DR@1: 98.92, DR@5: 98.92, TR@5: 33.34, TR@15: 38.62}
+  sxfmr:          {DR@1: 100.0, DR@5: 100.0, TR@5: 28.21, TR@15: 46.47}
+  crush_bm25:     {DR@1: 100.0, DR@5: 100.0, TR@5: 34.87, TR@15: 54.03}
+  crush_sxfmr:    {DR@1: 100.0, DR@5: 100.0, TR@5: 34.06, TR@15: 50.78}
+  bm25_finetuned: {DR@1: 98.92, DR@5: 98.92, TR@5: 32.67, TR@15: 38.30}
+  dtr:            {DR@1: 100.0, DR@5: 100.0, TR@5: 37.72, TR@15: 48.85}
+  dbcopilot:      {DR@1: 100.0, DR@5: 100.0, TR@5: 41.12, TR@15: 56.89}
+spider_syn:
+  bm25:           {DR@1: 29.11, DR@5: 58.03, TR@5: 45.30, TR@15: 58.87}
+  sxfmr:          {DR@1: 47.78, DR@5: 80.85, TR@5: 65.90, TR@15: 82.96}
+  crush_bm25:     {DR@1: 35.88, DR@5: 65.18, TR@5: 46.80, TR@15: 64.06}
+  crush_sxfmr:    {DR@1: 45.45, DR@5: 81.14, TR@5: 67.52, TR@15: 84.18}
+  bm25_finetuned: {DR@1: 30.66, DR@5: 57.83, TR@5: 46.12, TR@15: 59.65}
+  dtr:            {DR@1: 46.52, DR@5: 82.69, TR@5: 65.09, TR@15: 83.19}
+  dbcopilot:      {DR@1: 62.67, DR@5: 85.11, TR@5: 70.35, TR@15: 86.26}
+spider_realistic:
+  bm25:           {DR@1: 52.95, DR@5: 81.10, TR@5: 70.87, TR@15: 80.64}
+  sxfmr:          {DR@1: 58.86, DR@5: 88.78, TR@5: 79.48, TR@15: 90.52}
+  crush_bm25:     {DR@1: 58.46, DR@5: 86.42, TR@5: 75.38, TR@15: 89.14}
+  crush_sxfmr:    {DR@1: 59.65, DR@5: 91.14, TR@5: 80.99, TR@15: 92.78}
+  bm25_finetuned: {DR@1: 50.00, DR@5: 81.30, TR@5: 70.77, TR@15: 80.87}
+  dtr:            {DR@1: 59.65, DR@5: 89.96, TR@5: 73.23, TR@15: 91.73}
+  dbcopilot:      {DR@1: 79.53, DR@5: 95.47, TR@5: 87.93, TR@15: 96.06}

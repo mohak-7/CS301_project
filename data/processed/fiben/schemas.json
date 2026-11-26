@@ -1,0 +1,3144 @@
+{
+  "fiben": [
+    {
+      "name": "accountspayableandaccruedliabilities",
+      "normalized_name": "ACCOUNTS PAYABLE AND ACCRUED LIABILITIES",
+      "columns": [
+        {
+          "name": "accountspayableandaccruedliabilitiesid",
+          "normalized_name": "ACCOUNTS PAYABLE AND ACCRUED LIABILITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "accountspayabledetails",
+      "normalized_name": "ACCOUNTS PAYABLE DETAILS",
+      "columns": [
+        {
+          "name": "accountspayabledetailsid",
+          "normalized_name": "ACCOUNTS PAYABLE DETAILS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "accruedliabilities",
+      "normalized_name": "ACCRUED LIABILITIES",
+      "columns": [
+        {
+          "name": "accruedliabilitiesid",
+          "normalized_name": "ACCRUED LIABILITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "accumulatedothercomprehensiveincomeloss",
+      "normalized_name": "ACCUMULATED OTHER COMPREHENSIVE INCOME LOSS",
+      "columns": [
+        {
+          "name": "accumulatedothercomprehensiveincomelossid",
+          "normalized_name": "ACCUMULATED OTHER COMPREHENSIVE INCOME LOS SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "address",
+      "normalized_name": "ADDRESS",
+      "columns": [
+        {
+          "name": "addressid",
+          "normalized_name": "ADDRESS ID",
+          "primary_key": true
+        },
+        {
+          "name": "isindexto",
+          "normalized_name": "IS INDEX TO"
+        },
+        {
+          "name": "postaladdress",
+          "normalized_name": "POSTAL ADDRESS"
+        },
+        {
+          "name": "virtualaddress",
+          "normalized_name": "VIRTUAL ADDRESS",
+          "foreign_key": {
+            "table": "virtualaddress",
+            "column": "virtualaddressid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "allowanceforcreditlosses",
+      "normalized_name": "ALLOWANCE FOR CREDIT LOSSES",
+      "columns": [
+        {
+          "name": "allowanceforcreditlossesid",
+          "normalized_name": "ALLOWANCE FOR CREDIT LOSSES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "antidilutivesecuritiesexcludedfromcomputationofearningspershare",
+      "normalized_name": "ANTI DIL UTI VE SECURITIES EXCLUDED FROM COMPUTATION OF EARNINGS PER SHARE",
+      "columns": [
+        {
+          "name": "antidilutivesecuritiesexcludedfromcomputationofearningspershareid",
+          "normalized_name": "ANTI DIL UTI VE SECURITIES EXCLUDED FROM COMPUTATION OF EARNINGS PER SHARE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "asset",
+      "normalized_name": "ASSET",
+      "columns": [
+        {
+          "name": "assetid",
+          "normalized_name": "ASSET ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "assetimpairmentcharges",
+      "normalized_name": "ASSET IMPAIRMENT CHARGES",
+      "columns": [
+        {
+          "name": "assetimpairmentchargesid",
+          "normalized_name": "ASSET IMPAIRMENT CHARGE SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "assetretirementobligationdisclosure",
+      "normalized_name": "ASSET RETIREMENT OBLIGATION DISCLOSURE",
+      "columns": [
+        {
+          "name": "assetretirementobligationdisclosureid",
+          "normalized_name": "ASSET RETIREMENT OBLIGATION DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "autonomousagent",
+      "normalized_name": "AUTONOMOUS AGENT",
+      "columns": [
+        {
+          "name": "autonomousagentid",
+          "normalized_name": "AUTONOMOUS AGENT ID",
+          "primary_key": true
+        }
+      ]
+    },
+    {
+      "name": "availableforsalesecurities",
+      "normalized_name": "AVAILABLE FOR SALE SECURITIES",
+      "columns": [
+        {
+          "name": "availableforsalesecuritiesid",
+          "normalized_name": "AVAILABLE FOR SALE SECURITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "businessacquisitionintegrationrestructuringandotherrelatedcosts",
+      "normalized_name": "BUSINESS ACQUISITION INTEGRATION RESTRUCTURING AND OTHER RELATED COSTS",
+      "columns": [
+        {
+          "name": "businessacquisitionintegrationrestructuringandotherrelatedcostsid",
+          "normalized_name": "BUSINESS ACQUISITION INTEGRATION RESTRUCTURING AND OTHER RELATED COST SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "businessacquisitionproformainformation",
+      "normalized_name": "BUSINESS ACQUISITION PROFORMA INFORMATION",
+      "columns": [
+        {
+          "name": "businessacquisitionproformainformationid",
+          "normalized_name": "BUSINESS ACQUISITION PROFORMA INFORMATION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "businesscombinationdisclosure",
+      "normalized_name": "BUSINESS COMBINATION DISCLOSURE",
+      "columns": [
+        {
+          "name": "businesscombinationdisclosureid",
+          "normalized_name": "BUSINESS COMBINATION DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "capitalunits",
+      "normalized_name": "CAPITAL UNITS",
+      "columns": [
+        {
+          "name": "capitalunitsid",
+          "normalized_name": "CAPITAL UNITS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "cashandcashequivalents",
+      "normalized_name": "CASH AND CASH EQUIVALENTS",
+      "columns": [
+        {
+          "name": "cashandcashequivalentsid",
+          "normalized_name": "CASH AND CASH EQUIVALENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "cashandcashequivalentsdisclosure",
+      "normalized_name": "CASH AND CASH EQUIVALENTS DISCLOSURE",
+      "columns": [
+        {
+          "name": "cashandcashequivalentsdisclosureid",
+          "normalized_name": "CASH AND CASH EQUIVALENTS DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "cashcashequivalentsandshortterminvestments",
+      "normalized_name": "CASH CASH EQUIVALENTS AND SHORT TERM INVESTMENTS",
+      "columns": [
+        {
+          "name": "cashcashequivalentsandshortterminvestmentsid",
+          "normalized_name": "CASH CASH EQUIVALENTS AND SHORT TERM INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "changeinaccountingestimate",
+      "normalized_name": "CHANGE IN ACCOUNTING ESTIMATE",
+      "columns": [
+        {
+          "name": "changeinaccountingestimateid",
+          "normalized_name": "CHANGE IN ACCOUNTING ESTIMATE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "changesinfairvalueofplanassets",
+      "normalized_name": "CHANGES IN FAIR VALUE OF PLAN ASSETS",
+      "columns": [
+        {
+          "name": "changesinfairvalueofplanassetsid",
+          "normalized_name": "CHANGES IN FAIR VALUE OF PLAN ASSETS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "commitmentscontingenciesandguarantees",
+      "normalized_name": "COMMITMENTS CONTINGENCIES AND GUARANTEES",
+      "columns": [
+        {
+          "name": "commitmentscontingenciesandguaranteesid",
+          "normalized_name": "COMMITMENTS CONTINGENCIES AND GUARANTEES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "comprehensiveincome",
+      "normalized_name": "COMPREHENSIVE INCOME",
+      "columns": [
+        {
+          "name": "comprehensiveincomeid",
+          "normalized_name": "COMPREHENSIVE INCOME ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "comprehensiveincomeloss",
+      "normalized_name": "COMPREHENSIVE INCOME LOSS",
+      "columns": [
+        {
+          "name": "comprehensiveincomelossid",
+          "normalized_name": "COMPREHENSIVE INCOME LOS SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "contract",
+      "normalized_name": "CONTRACT",
+      "columns": [
+        {
+          "name": "contractid",
+          "normalized_name": "CONTRACT ID",
+          "primary_key": true
+        },
+        {
+          "name": "hascontractparty",
+          "normalized_name": "HAS CONTRACT PARTY"
+        },
+        {
+          "name": "ismanagedby",
+          "normalized_name": "IS MANAGED BY",
+          "foreign_key": {
+            "table": "corporation",
+            "column": "corporationid"
+          }
+        },
+        {
+          "name": "haseffectivedate",
+          "normalized_name": "HAS EFFECTIVE DATE"
+        },
+        {
+          "name": "hasposition",
+          "normalized_name": "HAS POSITION"
+        },
+        {
+          "name": "hasexpirationdate",
+          "normalized_name": "HAS EXPIRATION DATE"
+        },
+        {
+          "name": "hastitle",
+          "normalized_name": "HAS TITLE"
+        }
+      ]
+    },
+    {
+      "name": "contractparty",
+      "normalized_name": "CONTRACT PARTY",
+      "columns": [
+        {
+          "name": "contractpartyid",
+          "normalized_name": "CONTRACT PARTY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "person",
+            "column": "personid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "conversionofstock",
+      "normalized_name": "CONVERSION OF STOCK",
+      "columns": [
+        {
+          "name": "conversionofstockid",
+          "normalized_name": "CONVERSION OF STOCK ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "corporation",
+      "normalized_name": "CORPORATION",
+      "columns": [
+        {
+          "name": "corporationid",
+          "normalized_name": "CORPORATION ID",
+          "primary_key": true
+        },
+        {
+          "name": "isclassifiedby",
+          "normalized_name": "IS CLASSIFIED BY"
+        },
+        {
+          "name": "isdomiciledin",
+          "normalized_name": "IS DOMICILED IN",
+          "foreign_key": {
+            "table": "country",
+            "column": "countryid"
+          }
+        },
+        {
+          "name": "hastickersymbol",
+          "normalized_name": "HAS TICKER SYMBOL"
+        },
+        {
+          "name": "haslegalname",
+          "normalized_name": "HAS LEGAL NAME"
+        }
+      ]
+    },
+    {
+      "name": "costmethodinvestments",
+      "normalized_name": "COST METHOD INVESTMENTS",
+      "columns": [
+        {
+          "name": "costmethodinvestmentsid",
+          "normalized_name": "COST METHOD INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "costsofretirementplans",
+      "normalized_name": "COSTS OF RETIREMENT PLANS",
+      "columns": [
+        {
+          "name": "costsofretirementplansid",
+          "normalized_name": "COSTS OF RETIREMENT PLANS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "country",
+      "normalized_name": "COUNTRY",
+      "columns": [
+        {
+          "name": "countryid",
+          "normalized_name": "COUNTRY ID",
+          "primary_key": true
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        },
+        {
+          "name": "hasnumericcountrycode",
+          "normalized_name": "HAS NUMERIC COUNTRY CODE"
+        }
+      ]
+    },
+    {
+      "name": "currency",
+      "normalized_name": "CURRENCY",
+      "columns": [
+        {
+          "name": "currencyid",
+          "normalized_name": "CURRENCY ID",
+          "primary_key": true
+        },
+        {
+          "name": "hasnumericcode",
+          "normalized_name": "HAS NUMERIC CODE"
+        },
+        {
+          "name": "hascurrencyname",
+          "normalized_name": "HAS CURRENCY NAME"
+        },
+        {
+          "name": "hasminorunit",
+          "normalized_name": "HAS MINOR UNIT"
+        }
+      ]
+    },
+    {
+      "name": "debt",
+      "normalized_name": "DEBT",
+      "columns": [
+        {
+          "name": "debtid",
+          "normalized_name": "DEBT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "debtconversion",
+      "normalized_name": "DEBT CONVERSION",
+      "columns": [
+        {
+          "name": "debtconversionid",
+          "normalized_name": "DEBT CONVERSION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "deferredtaxassetsandliabilities",
+      "normalized_name": "DEFERRED TAX ASSETS AND LIABILITIES",
+      "columns": [
+        {
+          "name": "deferredtaxassetsandliabilitiesid",
+          "normalized_name": "DEFERRED TAX ASSETS AND LIABILITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "definedbenefitplanamountsrecognizedinothercomprehensiveincomeloss",
+      "normalized_name": "DEFINED BENEFIT PLAN AMOUNTS RECOGNIZED IN OTHER COMPREHENSIVE INCOME LOSS",
+      "columns": [
+        {
+          "name": "definedbenefitplanamountsrecognizedinothercomprehensiveincomelossid",
+          "normalized_name": "DEFINED BENEFIT PLAN AMOUNTS RECOGNIZED IN OTHER COMPREHENSIVE INCOME LOS SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "derivative",
+      "normalized_name": "DERIVATIVE",
+      "columns": [
+        {
+          "name": "derivativeid",
+          "normalized_name": "DERIVATIVE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "disclosure",
+      "normalized_name": "DISCLOSURE",
+      "columns": [
+        {
+          "name": "disclosureid",
+          "normalized_name": "DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementsoffinancialreport",
+            "column": "elementsoffinancialreportid"
+          }
+        },
+        {
+          "name": "hasmetricyearcalendar",
+          "normalized_name": "HAS METRIC YEAR CALENDAR"
+        },
+        {
+          "name": "hasmetricstartdate",
+          "normalized_name": "HAS METRIC START DATE"
+        },
+        {
+          "name": "hasdocumenttype",
+          "normalized_name": "HAS DOCUMENT TYPE"
+        },
+        {
+          "name": "hasmetricendquarter",
+          "normalized_name": "HAS METRIC END QUARTER"
+        },
+        {
+          "name": "hasunit",
+          "normalized_name": "HAS UNIT"
+        },
+        {
+          "name": "applicableperiod",
+          "normalized_name": "APPLICABLE PERIOD"
+        },
+        {
+          "name": "hasuniqueidentifier",
+          "normalized_name": "HAS UNIQUE IDENTIFIER"
+        },
+        {
+          "name": "hasmetricenddate",
+          "normalized_name": "HAS METRIC ENDDATE"
+        },
+        {
+          "name": "iscomputed",
+          "normalized_name": "IS COMPUTED"
+        },
+        {
+          "name": "hasmetricvalue",
+          "normalized_name": "HAS METRIC VALUE"
+        },
+        {
+          "name": "hasmetricyearfiscal",
+          "normalized_name": "HAS METRIC YEAR FISCAL"
+        },
+        {
+          "name": "hasurl",
+          "normalized_name": "HAS URL"
+        },
+        {
+          "name": "hasmetriccontextdimensions",
+          "normalized_name": "HAS METRIC CONTEXT DIMENSIONS"
+        },
+        {
+          "name": "hasmetricstartquarter",
+          "normalized_name": "HAS METRIC START QUARTER"
+        }
+      ]
+    },
+    {
+      "name": "distributiontoowner",
+      "normalized_name": "DISTRIBUTION TO OWNER",
+      "columns": [
+        {
+          "name": "distributiontoownerid",
+          "normalized_name": "DISTRIBUTION TO OWNER ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "dividendpaymentrestrictions",
+      "normalized_name": "DIVIDEND PAYMENT RESTRICTIONS",
+      "columns": [
+        {
+          "name": "dividendpaymentrestrictionsid",
+          "normalized_name": "DIVIDEND PAYMENT RESTRICTIONS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "dividendspayable",
+      "normalized_name": "DIVIDENDS PAYABLE",
+      "columns": [
+        {
+          "name": "dividendspayableid",
+          "normalized_name": "DIVIDENDS PAYABLE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "effectiveincometaxratereconciliation",
+      "normalized_name": "EFFECTIVE INCOME TAX RATE RECONCILIATION",
+      "columns": [
+        {
+          "name": "effectiveincometaxratereconciliationid",
+          "normalized_name": "EFFECTIVE INCOME TAX RATE RECONCILIATION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "elementoffinancialstatement",
+      "normalized_name": "ELEMENT OF FINANCIAL STATEMENT",
+      "columns": [
+        {
+          "name": "elementoffinancialstatementid",
+          "normalized_name": "ELEMENT OF FINANCIAL STATEMENT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementsoffinancialreport",
+            "column": "elementsoffinancialreportid"
+          }
+        },
+        {
+          "name": "hasmetricyearcalendar",
+          "normalized_name": "HAS METRIC YEAR CALENDAR"
+        },
+        {
+          "name": "hasmetricstartdate",
+          "normalized_name": "HAS METRIC START DATE"
+        },
+        {
+          "name": "hasdocumenttype",
+          "normalized_name": "HAS DOCUMENT TYPE"
+        },
+        {
+          "name": "hasmetricendquarter",
+          "normalized_name": "HAS METRIC END QUARTER"
+        },
+        {
+          "name": "hasunit",
+          "normalized_name": "HAS UNIT"
+        },
+        {
+          "name": "applicableperiod",
+          "normalized_name": "APPLICABLE PERIOD"
+        },
+        {
+          "name": "hasuniqueidentifier",
+          "normalized_name": "HAS UNIQUE IDENTIFIER"
+        },
+        {
+          "name": "hasmetricenddate",
+          "normalized_name": "HAS METRIC ENDDATE"
+        },
+        {
+          "name": "iscomputed",
+          "normalized_name": "IS COMPUTED"
+        },
+        {
+          "name": "hasmetricvalue",
+          "normalized_name": "HAS METRIC VALUE"
+        },
+        {
+          "name": "hasmetricyearfiscal",
+          "normalized_name": "HAS METRIC YEAR FISCAL"
+        },
+        {
+          "name": "hasurl",
+          "normalized_name": "HAS URL"
+        },
+        {
+          "name": "hasmetriccontextdimensions",
+          "normalized_name": "HAS METRIC CONTEXT DIMENSIONS"
+        },
+        {
+          "name": "hasmetricstartquarter",
+          "normalized_name": "HAS METRIC START QUARTER"
+        }
+      ]
+    },
+    {
+      "name": "elementsoffinancialreport",
+      "normalized_name": "ELEMENTS OF FINANCIAL REPORT",
+      "columns": [
+        {
+          "name": "elementsoffinancialreportid",
+          "normalized_name": "ELEMENTS OF FINANCIAL REPORT ID",
+          "primary_key": true
+        },
+        {
+          "name": "ismemberof",
+          "normalized_name": "IS MEMBER OF",
+          "foreign_key": {
+            "table": "financialreport",
+            "column": "financialreportid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "emailaddress",
+      "normalized_name": "EMAIL ADDRESS",
+      "columns": [
+        {
+          "name": "emailaddressid",
+          "normalized_name": "EMAIL ADDRESS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "virtualaddress",
+            "column": "virtualaddressid"
+          }
+        },
+        {
+          "name": "hasvalue",
+          "normalized_name": "HAS VALUE"
+        }
+      ]
+    },
+    {
+      "name": "entitylocation",
+      "normalized_name": "ENTITY LOCATION",
+      "columns": [
+        {
+          "name": "entitylocationid",
+          "normalized_name": "ENTITY LOCATION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "equity",
+      "normalized_name": "EQUITY",
+      "columns": [
+        {
+          "name": "equityid",
+          "normalized_name": "EQUITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "equitymethodinvestments",
+      "normalized_name": "EQUITY METHOD INVESTMENTS",
+      "columns": [
+        {
+          "name": "equitymethodinvestmentsid",
+          "normalized_name": "EQUITY METHOD INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "errorcorrectionsandpriorperiodadjustments",
+      "normalized_name": "ERROR CORRECTIONS AND PRIOR PERIOD ADJUSTMENTS",
+      "columns": [
+        {
+          "name": "errorcorrectionsandpriorperiodadjustmentsid",
+          "normalized_name": "ERROR CORRECTIONS AND PRIOR PERIOD ADJUSTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "expense",
+      "normalized_name": "EXPENSE",
+      "columns": [
+        {
+          "name": "expenseid",
+          "normalized_name": "EXPENSE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "extinguishmentofdebt",
+      "normalized_name": "EXTINGUISH MENT OF DEBT",
+      "columns": [
+        {
+          "name": "extinguishmentofdebtid",
+          "normalized_name": "EXTINGUISH MENT OF DEBT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "extraordinaryitems",
+      "normalized_name": "EXTRAORDINARY ITEMS",
+      "columns": [
+        {
+          "name": "extraordinaryitemsid",
+          "normalized_name": "EXTRAORDINARY ITEMS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financialinstrument",
+      "normalized_name": "FINANCIAL INSTRUMENT",
+      "columns": [
+        {
+          "name": "financialinstrumentid",
+          "normalized_name": "FINANCIAL INSTRUMENT ID",
+          "primary_key": true
+        },
+        {
+          "name": "istransferable",
+          "normalized_name": "IS TRANSFERABLE"
+        }
+      ]
+    },
+    {
+      "name": "financialinstrumentssubjecttomandatoryredemption",
+      "normalized_name": "FINANCIAL INSTRUMENTS SUBJECT TO MANDATORY REDEMPTION",
+      "columns": [
+        {
+          "name": "financialinstrumentssubjecttomandatoryredemptionid",
+          "normalized_name": "FINANCIAL INSTRUMENTS SUBJECT TO MANDATORY REDEMPTION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financialmarket",
+      "normalized_name": "FINANCIAL MARKET",
+      "columns": [
+        {
+          "name": "financialmarketid",
+          "normalized_name": "FINANCIAL MARKET ID",
+          "primary_key": true
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financialmetrics",
+      "normalized_name": "FINANCIAL METRICS",
+      "columns": [
+        {
+          "name": "financialmetricsid",
+          "normalized_name": "FINANCIAL METRIC SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financialreport",
+      "normalized_name": "FINANCIAL REPORT",
+      "columns": [
+        {
+          "name": "financialreportid",
+          "normalized_name": "FINANCIAL REPORT ID",
+          "primary_key": true
+        },
+        {
+          "name": "isprovidedby",
+          "normalized_name": "IS PROVIDED BY",
+          "foreign_key": {
+            "table": "corporation",
+            "column": "corporationid"
+          }
+        },
+        {
+          "name": "hasuniqueidentifier",
+          "normalized_name": "HAS UNIQUE IDENTIFIER"
+        }
+      ]
+    },
+    {
+      "name": "financialserviceaccount",
+      "normalized_name": "FINANCIAL SERVICE ACCOUNT",
+      "columns": [
+        {
+          "name": "financialserviceaccountid",
+          "normalized_name": "FINANCIAL SERVICE ACCOUNT ID",
+          "primary_key": true
+        },
+        {
+          "name": "isownedby",
+          "normalized_name": "IS OWNED BY",
+          "foreign_key": {
+            "table": "person",
+            "column": "personid"
+          }
+        },
+        {
+          "name": "ismanagedby",
+          "normalized_name": "IS MANAGED BY"
+        },
+        {
+          "name": "hasaccountnumber",
+          "normalized_name": "HAS ACCOUNT NUMBER"
+        },
+        {
+          "name": "hasstartdate",
+          "normalized_name": "HAS START DATE"
+        }
+      ]
+    },
+    {
+      "name": "financingreceivableallowanceforcreditlosses",
+      "normalized_name": "FINANCING RECEIVABLE ALLOWANCE FOR CREDIT LOSSES",
+      "columns": [
+        {
+          "name": "financingreceivableallowanceforcreditlossesid",
+          "normalized_name": "FINANCING RECEIVABLE ALLOWANCE FOR CREDIT LOSSES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financingreceivablecreditqualityindicators",
+      "normalized_name": "FINANCING RECEIVABLE CREDIT QUALITY INDICATORS",
+      "columns": [
+        {
+          "name": "financingreceivablecreditqualityindicatorsid",
+          "normalized_name": "FINANCING RECEIVABLE CREDIT QUALITY INDICATORS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financingreceivables",
+      "normalized_name": "FINANCING RECEIVABLE S",
+      "columns": [
+        {
+          "name": "financingreceivablesid",
+          "normalized_name": "FINANCING RECEIVABLE SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financingreceivablespastdue",
+      "normalized_name": "FINANCING RECEIVABLE S PAST DUE",
+      "columns": [
+        {
+          "name": "financingreceivablespastdueid",
+          "normalized_name": "FINANCING RECEIVABLE S PAST DUE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "financingreceivabletroubleddebtrestructurings",
+      "normalized_name": "FINANCING RECEIVABLE TROUBLED DEBT RESTRUCTURINGS",
+      "columns": [
+        {
+          "name": "financingreceivabletroubleddebtrestructuringsid",
+          "normalized_name": "FINANCING RECEIVABLE TROUBLED DEBT RESTRUCTURING SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "foreigncurrencytranslation",
+      "normalized_name": "FOREIGN CURRENCY TRANSLATION",
+      "columns": [
+        {
+          "name": "foreigncurrencytranslationid",
+          "normalized_name": "FOREIGN CURRENCY TRANSLATION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "forwardcontractindexedtoissuersequity",
+      "normalized_name": "FORWARD CONTRACT INDEXED TO ISSUERS EQUITY",
+      "columns": [
+        {
+          "name": "forwardcontractindexedtoissuersequityid",
+          "normalized_name": "FORWARD CONTRACT INDEXED TO ISSUERS EQUITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "freshstartadjustments",
+      "normalized_name": "FRESHSTART ADJUSTMENTS",
+      "columns": [
+        {
+          "name": "freshstartadjustmentsid",
+          "normalized_name": "FRESHSTART ADJUSTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "gainlossoninvestments",
+      "normalized_name": "GAIN LOSS ON INVESTMENTS",
+      "columns": [
+        {
+          "name": "gainlossoninvestmentsid",
+          "normalized_name": "GAIN LOSS ON INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "goodwill",
+      "normalized_name": "GOODWILL",
+      "columns": [
+        {
+          "name": "goodwillid",
+          "normalized_name": "GOODWILL ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "guarantees",
+      "normalized_name": "GUARANTEES",
+      "columns": [
+        {
+          "name": "guaranteesid",
+          "normalized_name": "GUARANTEES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "guarantorobligations",
+      "normalized_name": "GUARANTOR OBLIGATIONS",
+      "columns": [
+        {
+          "name": "guarantorobligationsid",
+          "normalized_name": "GUARANTOR OBLIGATIONS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "heldtomaturitysecurities",
+      "normalized_name": "HELD TO MATURITY SECURITIES",
+      "columns": [
+        {
+          "name": "heldtomaturitysecuritiesid",
+          "normalized_name": "HELD TO MATURITY SECURITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "holding",
+      "normalized_name": "HOLDING",
+      "columns": [
+        {
+          "name": "holdingid",
+          "normalized_name": "HOLDING ID",
+          "primary_key": true
+        },
+        {
+          "name": "isheldby",
+          "normalized_name": "IS HELD BY"
+        },
+        {
+          "name": "refersto",
+          "normalized_name": "REFERS TO",
+          "foreign_key": {
+            "table": "listedsecurity",
+            "column": "listedsecurityid"
+          }
+        },
+        {
+          "name": "hasdescription",
+          "normalized_name": "HAS DESCRIPTION"
+        },
+        {
+          "name": "hascount",
+          "normalized_name": "HAS COUNT"
+        }
+      ]
+    },
+    {
+      "name": "impairedfinancingreceivables",
+      "normalized_name": "IMPAIRED FINANCING RECEIVABLE S",
+      "columns": [
+        {
+          "name": "impairedfinancingreceivablesid",
+          "normalized_name": "IMPAIRED FINANCING RECEIVABLE SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "incometaxcontingency",
+      "normalized_name": "INCOME TAX CONTINGENCY",
+      "columns": [
+        {
+          "name": "incometaxcontingencyid",
+          "normalized_name": "INCOME TAX CONTINGENCY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "indefinitelivedintangibleassets",
+      "normalized_name": "INDEFINITE LIVED INTANGIBLE ASSETS",
+      "columns": [
+        {
+          "name": "indefinitelivedintangibleassetsid",
+          "normalized_name": "INDEFINITE LIVED INTANGIBLE ASSETS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "industrysectorclassificationscheme",
+      "normalized_name": "INDUSTRY SECTOR CLASSIFICATION SCHEME",
+      "columns": [
+        {
+          "name": "industrysectorclassificationschemeid",
+          "normalized_name": "INDUSTRY SECTOR CLASSIFICATION SCHEME ID",
+          "primary_key": true
+        },
+        {
+          "name": "hasdescription",
+          "normalized_name": "HAS DESCRIPTION"
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "industrysectorclassifier",
+      "normalized_name": "INDUSTRY SECTOR CLASS I FIER",
+      "columns": [
+        {
+          "name": "industrysectorclassifierid",
+          "normalized_name": "INDUSTRY SECTOR CLASS I FIERI D",
+          "primary_key": true
+        },
+        {
+          "name": "isdefinedby",
+          "normalized_name": "IS DEFINED BY",
+          "foreign_key": {
+            "table": "industrysectorclassificationscheme",
+            "column": "industrysectorclassificationschemeid"
+          }
+        },
+        {
+          "name": "hasuniqueidentifier",
+          "normalized_name": "HAS UNIQUE IDENTIFIER"
+        },
+        {
+          "name": "hasdescription",
+          "normalized_name": "HAS DESCRIPTION"
+        },
+        {
+          "name": "hasnumericcode",
+          "normalized_name": "HAS NUMERIC CODE"
+        },
+        {
+          "name": "hasformalname",
+          "normalized_name": "HAS FORMAL NAME"
+        }
+      ]
+    },
+    {
+      "name": "intangibleassetsandgoodwill",
+      "normalized_name": "INTANGIBLE ASSETS AND GOODWILL",
+      "columns": [
+        {
+          "name": "intangibleassetsandgoodwillid",
+          "normalized_name": "INTANGIBLE ASSETS AND GOODWILL ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "interestandotherincome",
+      "normalized_name": "INTEREST AND OTHER INCOME",
+      "columns": [
+        {
+          "name": "interestandotherincomeid",
+          "normalized_name": "INTEREST AND OTHER INCOME ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "interestcostsincurred",
+      "normalized_name": "INTEREST COSTS INCURRED",
+      "columns": [
+        {
+          "name": "interestcostsincurredid",
+          "normalized_name": "INTEREST COSTS INCURRED ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "inventorycurrent",
+      "normalized_name": "INVENTORY CURRENT",
+      "columns": [
+        {
+          "name": "inventorycurrentid",
+          "normalized_name": "INVENTORY CURRENT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "inventorynoncurrent",
+      "normalized_name": "INVENTORY NON CURRENT",
+      "columns": [
+        {
+          "name": "inventorynoncurrentid",
+          "normalized_name": "INVENTORY NON CURRENT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "investmentincome",
+      "normalized_name": "INVESTMENT INCOME",
+      "columns": [
+        {
+          "name": "investmentincomeid",
+          "normalized_name": "INVESTMENT INCOME ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "investmentsandothernoncurrentassets",
+      "normalized_name": "INVESTMENTS AND OTHER NON CURRENT ASSETS",
+      "columns": [
+        {
+          "name": "investmentsandothernoncurrentassetsid",
+          "normalized_name": "INVESTMENTS AND OTHER NON CURRENT ASSETS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "liability",
+      "normalized_name": "LIABILITY",
+      "columns": [
+        {
+          "name": "liabilityid",
+          "normalized_name": "LIABILITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "lineofcreditfacility",
+      "normalized_name": "LINE OF CREDIT FACILITY",
+      "columns": [
+        {
+          "name": "lineofcreditfacilityid",
+          "normalized_name": "LINE OF CREDIT FACILITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "listedsecurity",
+      "normalized_name": "LISTED SECURITY",
+      "columns": [
+        {
+          "name": "listedsecurityid",
+          "normalized_name": "LISTED SECURITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "security",
+            "column": "securityid"
+          }
+        },
+        {
+          "name": "haslasttradedvalue",
+          "normalized_name": "HAS LAST TRADED VALUE"
+        },
+        {
+          "name": "haslistingdate",
+          "normalized_name": "HAS LISTING DATE"
+        },
+        {
+          "name": "hastickersymbol",
+          "normalized_name": "HAS TICKER SYMBOL"
+        },
+        {
+          "name": "haslegalname",
+          "normalized_name": "HAS LEGAL NAME"
+        }
+      ]
+    },
+    {
+      "name": "longlivedassetsheldforsale",
+      "normalized_name": "LONG LIVED ASSETS HELD FOR SALE",
+      "columns": [
+        {
+          "name": "longlivedassetsheldforsaleid",
+          "normalized_name": "LONG LIVED ASSETS HELD FOR SALEI D",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "longlivedassetstobeabandoned",
+      "normalized_name": "LONG LIVED ASSETS TO BE ABANDONED",
+      "columns": [
+        {
+          "name": "longlivedassetstobeabandonedid",
+          "normalized_name": "LONG LIVED ASSETS TO BE ABANDONED ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "longtermdebt",
+      "normalized_name": "LONG TERM DEBT",
+      "columns": [
+        {
+          "name": "longtermdebtid",
+          "normalized_name": "LONG TERM DEBT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "longtermdebtmaturities",
+      "normalized_name": "LONG TERM DEBT MATURITIES",
+      "columns": [
+        {
+          "name": "longtermdebtmaturitiesid",
+          "normalized_name": "LONG TERM DEBT MATURITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "longtermpurchasecommitment",
+      "normalized_name": "LONG TERM PURCHASE COMMITMENT",
+      "columns": [
+        {
+          "name": "longtermpurchasecommitmentid",
+          "normalized_name": "LONG TERM PURCHASE COMMITMENT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "loss",
+      "normalized_name": "LOSS",
+      "columns": [
+        {
+          "name": "lossid",
+          "normalized_name": "LOS SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "marketablesecurities",
+      "normalized_name": "MARKETABLE SECURITIES",
+      "columns": [
+        {
+          "name": "marketablesecuritiesid",
+          "normalized_name": "MARKETABLE SECURITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "monetaryamount",
+      "normalized_name": "MONETARY AMOUNT",
+      "columns": [
+        {
+          "name": "monetaryamountid",
+          "normalized_name": "MONETARY AMOUNT ID",
+          "primary_key": true
+        },
+        {
+          "name": "hascurrency",
+          "normalized_name": "HAS CURRENCY",
+          "foreign_key": {
+            "table": "currency",
+            "column": "currencyid"
+          }
+        },
+        {
+          "name": "hasamount",
+          "normalized_name": "HAS AMOUNT"
+        }
+      ]
+    },
+    {
+      "name": "netperiodicbenefitcostnotyetrecognized",
+      "normalized_name": "NET PERIODIC BENEFIT COST NOT YET RECOGNIZED",
+      "columns": [
+        {
+          "name": "netperiodicbenefitcostnotyetrecognizedid",
+          "normalized_name": "NET PERIODIC BENEFIT COST NOT YET RECOGNIZE DID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "newaccountingpronouncementearlyadoption",
+      "normalized_name": "NEW ACCOUNTING PRONOUNCEMENT EARLY ADOPTION",
+      "columns": [
+        {
+          "name": "newaccountingpronouncementearlyadoptionid",
+          "normalized_name": "NEW ACCOUNTING PRONOUNCEMENT EARLY ADOPTION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "noncontrollinginterest",
+      "normalized_name": "NON CONTROLLING INTEREST",
+      "columns": [
+        {
+          "name": "noncontrollinginterestid",
+          "normalized_name": "NON CONTROLLING INTEREST ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "operatinglosscarryforwards",
+      "normalized_name": "OPERATING LOSS CARRY FORWARDS",
+      "columns": [
+        {
+          "name": "operatinglosscarryforwardsid",
+          "normalized_name": "OPERATING LOSS CARRY FORWARD SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherassets",
+      "normalized_name": "OTHER ASSETS",
+      "columns": [
+        {
+          "name": "otherassetsid",
+          "normalized_name": "OTHER ASSETS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherassetsandotherliabilities",
+      "normalized_name": "OTHER ASSETS AND OTHER LIABILITIES",
+      "columns": [
+        {
+          "name": "otherassetsandotherliabilitiesid",
+          "normalized_name": "OTHER ASSETS AND OTHER LIABILITIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherassetsdisclosure",
+      "normalized_name": "OTHER ASSETS DISCLOSURE",
+      "columns": [
+        {
+          "name": "otherassetsdisclosureid",
+          "normalized_name": "OTHER ASSETS DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherassetsnoncurrent",
+      "normalized_name": "OTHER ASSETS NON CURRENT",
+      "columns": [
+        {
+          "name": "otherassetsnoncurrentid",
+          "normalized_name": "OTHER ASSETS NON CURRENT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherliabilitiesdisclosure",
+      "normalized_name": "OTHER LIABILITIES DISCLOSURE",
+      "columns": [
+        {
+          "name": "otherliabilitiesdisclosureid",
+          "normalized_name": "OTHER LIABILITIES DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "othernonoperatingincomeexpense",
+      "normalized_name": "OTHER NON OPERATING INCOME EXPENSE",
+      "columns": [
+        {
+          "name": "othernonoperatingincomeexpenseid",
+          "normalized_name": "OTHER NON OPERATING INCOME EXPENSE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherownershipinterests",
+      "normalized_name": "OTHER OWNERSHIP INTERESTS",
+      "columns": [
+        {
+          "name": "otherownershipinterestsid",
+          "normalized_name": "OTHER OWNERSHIP INTEREST SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "otherthantemporaryimpairmentcreditlossesrecognizedinearnings",
+      "normalized_name": "OTHER THAN TEMPORARY IMPAIRMENT CREDIT LOSSES RECOGNIZED IN EARNINGS",
+      "columns": [
+        {
+          "name": "otherthantemporaryimpairmentcreditlossesrecognizedinearningsid",
+          "normalized_name": "OTHER THAN TEMPORARY IMPAIRMENT CREDIT LOSSES RECOGNIZED IN EARNING SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "person",
+      "normalized_name": "PERSON",
+      "columns": [
+        {
+          "name": "personid",
+          "normalized_name": "PERSON ID",
+          "primary_key": true
+        },
+        {
+          "name": "hasplaceofbirth",
+          "normalized_name": "HAS PLACE OF BIRTH",
+          "foreign_key": {
+            "table": "country",
+            "column": "countryid"
+          }
+        },
+        {
+          "name": "hascitizenship",
+          "normalized_name": "HAS CITIZENSHIP"
+        },
+        {
+          "name": "hasgender",
+          "normalized_name": "HAS GENDER"
+        },
+        {
+          "name": "hasdateofbirth",
+          "normalized_name": "HAS DATEOFBIRTH"
+        },
+        {
+          "name": "haspersonname",
+          "normalized_name": "HAS PERSON NAME"
+        },
+        {
+          "name": "haslastname",
+          "normalized_name": "HAS LASTNAME"
+        },
+        {
+          "name": "hasfirstname",
+          "normalized_name": "HAS FIRST NAME"
+        },
+        {
+          "name": "hasmiddlenameorinitial",
+          "normalized_name": "HAS MIDDLE NAME OR INITIAL"
+        }
+      ]
+    },
+    {
+      "name": "phonenumber",
+      "normalized_name": "PHONE NUMBER",
+      "columns": [
+        {
+          "name": "phonenumberid",
+          "normalized_name": "PHONE NUMBER ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "virtualaddress",
+            "column": "virtualaddressid"
+          }
+        },
+        {
+          "name": "hasvalue",
+          "normalized_name": "HAS VALUE"
+        }
+      ]
+    },
+    {
+      "name": "postaladdress",
+      "normalized_name": "POSTAL ADDRESS",
+      "columns": [
+        {
+          "name": "postaladdressid",
+          "normalized_name": "POSTAL ADDRESS ID",
+          "primary_key": true
+        },
+        {
+          "name": "hascountry",
+          "normalized_name": "HAS COUNTRY",
+          "foreign_key": {
+            "table": "country",
+            "column": "countryid"
+          }
+        },
+        {
+          "name": "hasaddressline1",
+          "normalized_name": "HAS ADDRESS LINE 1"
+        },
+        {
+          "name": "hasaddressline2",
+          "normalized_name": "HAS ADDRESS LINE 2"
+        },
+        {
+          "name": "hascity",
+          "normalized_name": "HAS CITY"
+        },
+        {
+          "name": "haspostalcode",
+          "normalized_name": "HAS POSTAL CODE"
+        },
+        {
+          "name": "hasstate",
+          "normalized_name": "HAS STATE"
+        }
+      ]
+    },
+    {
+      "name": "preferredstock",
+      "normalized_name": "PREFERRED STOCK",
+      "columns": [
+        {
+          "name": "preferredstockid",
+          "normalized_name": "PREFERRED STOCK ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "productwarrantyliability",
+      "normalized_name": "PRODUCT WARRANTY LIABILITY",
+      "columns": [
+        {
+          "name": "productwarrantyliabilityid",
+          "normalized_name": "PRODUCT WARRANTY LIABILITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "propertymanagementfee",
+      "normalized_name": "PROPERTY MANAGEMENT FEE",
+      "columns": [
+        {
+          "name": "propertymanagementfeeid",
+          "normalized_name": "PROPERTY MANAGEMENT FEE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "propertyplantandequipment",
+      "normalized_name": "PROPERTY PLANT AND EQUIPMENT",
+      "columns": [
+        {
+          "name": "propertyplantandequipmentid",
+          "normalized_name": "PROPERTY PLANT AND EQUIPMENT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "propertyplantandequipmentincomestatementdisclosures",
+      "normalized_name": "PROPERTY PLANT AND EQUIPMENT INCOME STATEMENT DISCLOSURES",
+      "columns": [
+        {
+          "name": "propertyplantandequipmentincomestatementdisclosuresid",
+          "normalized_name": "PROPERTY PLANT AND EQUIPMENT INCOME STATEMENT DISCLOSURES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "propertyplantandequipmentusefullives",
+      "normalized_name": "PROPERTY PLANT AND EQUIPMENT USEFUL LIVES",
+      "columns": [
+        {
+          "name": "propertyplantandequipmentusefullivesid",
+          "normalized_name": "PROPERTY PLANT AND EQUIPMENT USEFUL LIVE SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "propertysubjecttooravailableforoperatinglease",
+      "normalized_name": "PROPERTY SUBJECT TO OR AVAILABLE FOR OPERATING LEASE",
+      "columns": [
+        {
+          "name": "propertysubjecttooravailableforoperatingleaseid",
+          "normalized_name": "PROPERTY SUBJECT TO OR AVAILABLE FOR OPERATING LEASE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "realestateproperties",
+      "normalized_name": "REAL ESTATE PROPERTIES",
+      "columns": [
+        {
+          "name": "realestatepropertiesid",
+          "normalized_name": "REAL ESTATE PROPERTIES ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "realizedgainloss",
+      "normalized_name": "REALIZED GAIN LOSS",
+      "columns": [
+        {
+          "name": "realizedgainlossid",
+          "normalized_name": "REALIZED GAIN LOS SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "realizedgainlossoninvestments",
+      "normalized_name": "REALIZED GAIN LOSS ON INVESTMENTS",
+      "columns": [
+        {
+          "name": "realizedgainlossoninvestmentsid",
+          "normalized_name": "REALIZED GAIN LOSS ON INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "reconciliationofoperatingprofitlossfromsegmentstoconsolidated",
+      "normalized_name": "RECONCILIATION OF OPERATING PROFIT LOSS FROM SEGMENTS TO CONSOLIDATED",
+      "columns": [
+        {
+          "name": "reconciliationofoperatingprofitlossfromsegmentstoconsolidatedid",
+          "normalized_name": "RECONCILIATION OF OPERATING PROFIT LOSS FROM SEGMENTS TO CONSOLIDATE DID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "recordedunconditionalpurchaseobligation",
+      "normalized_name": "RECORDED UNCONDITIONAL PURCHASE OBLIGATION",
+      "columns": [
+        {
+          "name": "recordedunconditionalpurchaseobligationid",
+          "normalized_name": "RECORDED UNCONDITIONAL PURCHASE OBLIGATION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "redeemablenoncontrollinginterest",
+      "normalized_name": "REDEEMABLE NON CONTROLLING INTEREST",
+      "columns": [
+        {
+          "name": "redeemablenoncontrollinginterestid",
+          "normalized_name": "REDEEMABLE NON CONTROLLING INTEREST ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "relatedpartytransactionsbyrelatedparty",
+      "normalized_name": "RELATED PARTY TRANSACTIONS BY RELATED PARTY",
+      "columns": [
+        {
+          "name": "relatedpartytransactionsbyrelatedpartyid",
+          "normalized_name": "RELATED PARTY TRANSACTIONS BY RELATED PARTY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "rentexpense",
+      "normalized_name": "RENT EXPENSE",
+      "columns": [
+        {
+          "name": "rentexpenseid",
+          "normalized_name": "RENT EXPENSE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "restrictedcashandcashequivalents",
+      "normalized_name": "RESTRICTED CASH AND CASH EQUIVALENTS",
+      "columns": [
+        {
+          "name": "restrictedcashandcashequivalentsid",
+          "normalized_name": "RESTRICTED CASH AND CASH EQUIVALENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "restructuringandrelatedcosts",
+      "normalized_name": "RESTRUCTURING AND RELATED COSTS",
+      "columns": [
+        {
+          "name": "restructuringandrelatedcostsid",
+          "normalized_name": "RESTRUCTURING AND RELATED COST SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "revenue",
+      "normalized_name": "REVENUE",
+      "columns": [
+        {
+          "name": "revenueid",
+          "normalized_name": "REVENUE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "elementoffinancialstatement",
+            "column": "elementoffinancialstatementid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "saleleasebacktransaction",
+      "normalized_name": "SALE LEASE BACK TRANSACTION",
+      "columns": [
+        {
+          "name": "saleleasebacktransactionid",
+          "normalized_name": "SALE LEASE BACK TRANSACTION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "securitiestransaction",
+      "normalized_name": "SECURITIES TRANSACTION",
+      "columns": [
+        {
+          "name": "securitiestransactionid",
+          "normalized_name": "SECURITIES TRANSACTION ID",
+          "primary_key": true
+        },
+        {
+          "name": "isfacilitatedby",
+          "normalized_name": "IS FACILITATED BY"
+        },
+        {
+          "name": "hasprice",
+          "normalized_name": "HAS PRICE"
+        },
+        {
+          "name": "refersto",
+          "normalized_name": "REFERS TO",
+          "foreign_key": {
+            "table": "listedsecurity",
+            "column": "listedsecurityid"
+          }
+        },
+        {
+          "name": "hastype",
+          "normalized_name": "HAS TYPE"
+        },
+        {
+          "name": "hassettlementdate",
+          "normalized_name": "HAS SETTLEMENT DATE"
+        },
+        {
+          "name": "hascount",
+          "normalized_name": "HAS COUNT"
+        }
+      ]
+    },
+    {
+      "name": "security",
+      "normalized_name": "SECURITY",
+      "columns": [
+        {
+          "name": "securityid",
+          "normalized_name": "SECURITY ID",
+          "primary_key": true
+        },
+        {
+          "name": "istradedon",
+          "normalized_name": "IS TRADED ON",
+          "foreign_key": {
+            "table": "financialmarket",
+            "column": "financialmarketid"
+          }
+        },
+        {
+          "name": "isprovidedby",
+          "normalized_name": "IS PROVIDED BY"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationactivity",
+      "normalized_name": "SHARE BASED COMPENSATION ACTIVITY",
+      "columns": [
+        {
+          "name": "sharebasedcompensationactivityid",
+          "normalized_name": "SHARE BASED COMPENSATION ACTIVITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsgrantsinperiodgrantdateintrinsicvalue",
+      "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS GRANTS IN PERIOD GRANT DATE INTRINSIC VALUE",
+      "columns": [
+        {
+          "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsgrantsinperiodgrantdateintrinsicvalueid",
+          "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS GRANTS IN PERIOD GRANT DATE INTRINSIC VALUE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsgrantsinperiodweightedaveragegrantdatefairvalue",
+      "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS GRANTS IN PERIOD WEIGHTED AVERAGE GRANT DATE FAIR VALUE",
+      "columns": [
+        {
+          "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsgrantsinperiodweightedaveragegrantdatefairvalueid",
+          "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS GRANTS IN PERIOD WEIGHTED AVERAGE GRANT DATE FAIR VALUE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsvestedandexpectedtovestexercisable",
+      "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS VESTED AND EXPECTED TO VEST EXE RC IS ABLE",
+      "columns": [
+        {
+          "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsvestedandexpectedtovestexercisableid",
+          "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS VESTED AND EXPECTED TO VEST EXE RC IS ABLE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsvestedandexpectedtovestoutstandingandexercisable",
+      "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS VESTED AND EXPECTED TO VEST OUTSTANDING AND EXE RC IS ABLE",
+      "columns": [
+        {
+          "name": "sharebasedcompensationarrangementbysharebasedpaymentawardoptionsvestedandexpectedtovestoutstandingandexercisableid",
+          "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD OPTIONS VESTED AND EXPECTED TO VEST OUTSTANDING AND EXE RC IS ABLE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationarrangementbysharebasedpaymentawardrestrictedstockunitsvestedandexpectedtovest",
+      "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD RESTRICTED STOCK UNITS VESTED AND EXPECTED TO VEST",
+      "columns": [
+        {
+          "name": "sharebasedcompensationarrangementbysharebasedpaymentawardrestrictedstockunitsvestedandexpectedtovestid",
+          "normalized_name": "SHARE BASED COMPENSATION ARRANGEMENT BY SHARE BASED PAYMENT AWARD RESTRICTED STOCK UNITS VESTED AND EXPECTED TO VEST ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "sharebasedcompensationrestrictedstockunitsawardactivity",
+      "normalized_name": "SHARE BASED COMPENSATION RESTRICTED STOCK UNITS AWARD ACTIVITY",
+      "columns": [
+        {
+          "name": "sharebasedcompensationrestrictedstockunitsawardactivityid",
+          "normalized_name": "SHARE BASED COMPENSATION RESTRICTED STOCK UNITS AWARD ACTIVITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "shorttermdebt",
+      "normalized_name": "SHORT TERM DEBT",
+      "columns": [
+        {
+          "name": "shorttermdebtid",
+          "normalized_name": "SHORT TERM DEBT ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "stockholdersequity",
+      "normalized_name": "STOCKHOLDERS EQUITY",
+      "columns": [
+        {
+          "name": "stockholdersequityid",
+          "normalized_name": "STOCKHOLDERS EQUITY ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "subsequentevents",
+      "normalized_name": "SUBSEQUENT EVENTS",
+      "columns": [
+        {
+          "name": "subsequenteventsid",
+          "normalized_name": "SUBSEQUENT EVENTS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "taxcreditcarryforward",
+      "normalized_name": "TAX CREDIT CARRY FORWARD",
+      "columns": [
+        {
+          "name": "taxcreditcarryforwardid",
+          "normalized_name": "TAX CREDIT CARRY FOR WAR DID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "tradingsecuritiesandothertradingassets",
+      "normalized_name": "TRADING SECURITIES AND OTHER TRADING ASSETS",
+      "columns": [
+        {
+          "name": "tradingsecuritiesandothertradingassetsid",
+          "normalized_name": "TRADING SECURITIES AND OTHER TRADING ASSETS ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "treasurystock",
+      "normalized_name": "TREASURY STOCK",
+      "columns": [
+        {
+          "name": "treasurystockid",
+          "normalized_name": "TREASURY STOCK ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "unrealizedgainlossoninvestments",
+      "normalized_name": "UNREALIZED GAIN LOSS ON INVESTMENTS",
+      "columns": [
+        {
+          "name": "unrealizedgainlossoninvestmentsid",
+          "normalized_name": "UNREALIZED GAIN LOSS ON INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "unrealizedlossoninvestments",
+      "normalized_name": "UNREALIZED LOSS ON INVESTMENTS",
+      "columns": [
+        {
+          "name": "unrealizedlossoninvestmentsid",
+          "normalized_name": "UNREALIZED LOSS ON INVESTMENT SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "unrecordedunconditionalpurchaseobligation",
+      "normalized_name": "UNRECORDED UNCONDITIONAL PURCHASE OBLIGATION",
+      "columns": [
+        {
+          "name": "unrecordedunconditionalpurchaseobligationid",
+          "normalized_name": "UNRECORDED UNCONDITIONAL PURCHASE OBLIGATION ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "unrecordedunconditionalpurchaseobligationsdisclosure",
+      "normalized_name": "UNRECORDED UNCONDITIONAL PURCHASE OBLIGATIONS DISCLOSURE",
+      "columns": [
+        {
+          "name": "unrecordedunconditionalpurchaseobligationsdisclosureid",
+          "normalized_name": "UNRECORDED UNCONDITIONAL PURCHASE OBLIGATIONS DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "valuationallowance",
+      "normalized_name": "VALUATION ALLOWANCE",
+      "columns": [
+        {
+          "name": "valuationallowanceid",
+          "normalized_name": "VALUATION ALLOWANCE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "valuationandqualifyingaccountsdisclosure",
+      "normalized_name": "VALUATION AND QUALIFYING ACCOUNTS DISCLOSURE",
+      "columns": [
+        {
+          "name": "valuationandqualifyingaccountsdisclosureid",
+          "normalized_name": "VALUATION AND QUALIFYING ACCOUNTS DISCLOSURE ID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    },
+    {
+      "name": "virtualaddress",
+      "normalized_name": "VIRTUAL ADDRESS",
+      "columns": [
+        {
+          "name": "virtualaddressid",
+          "normalized_name": "VIRTUAL ADDRESS ID",
+          "primary_key": true
+        }
+      ]
+    },
+    {
+      "name": "weightedaveragenumberofshares",
+      "normalized_name": "WEIGHTED AVERAGE NUMBER OF SHARES",
+      "columns": [
+        {
+          "name": "weightedaveragenumberofsharesid",
+          "normalized_name": "WEIGHTED AVERAGE NUMBER OF SHARE SID",
+          "primary_key": true,
+          "foreign_key": {
+            "table": "disclosure",
+            "column": "disclosureid"
+          }
+        },
+        {
+          "name": "hasname",
+          "normalized_name": "HAS NAME"
+        }
+      ]
+    }
+  ]
+}

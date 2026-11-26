@@ -1,0 +1,36 @@
+# Extension tuning (implementation_plan.md, §9): same procedure, sample and grids as Phase 6
+# (configs/tuning.yaml), applied to the hybrid and reranked seeds. Training questions only.
+
+seed: 42
+sample_size: 500            # random training questions per dataset
+datasets: [spider, bird]    # Fiben has no training split; it uses these settings (zero-shot)
+seed_methods: [hybrid, hybrid_rr]  # extension seeds (§9); BM25/SXFMR settings are kept
+merge: true                 # add to configs/final.yaml instead of replacing it
+objective: TR@5             # per-question table recall@5, averaged over the datasets
+tie_breaker: DR@1           # database recall@1, averaged over the datasets
+output: configs/final.yaml
+results: results/tuning
+
+# Settings that are not tuned.
+fixed:
+  pagerank_iterations: 100
+  pagerank_tolerance: 1.0e-8
+  cutoff: 100
+
+# Staged search: G1 first, then G2, then G3 with G2's best settings fixed (§5.5).
+# The first run used the §5.5 grids; several best values fell on a grid edge (beta 0.1,
+# num_seeds 5, damping 0.85), so those grids were extended one step outward and the search was
+# run again. Both runs used training questions only.
+grid:
+  G1:
+    beta: [0.05, 0.1, 0.2, 0.3, 0.5, 0.7]
+  G2:
+    alpha: [0.3, 0.5, 0.7, 0.9]
+    num_seeds: [3, 5, 10, 20]
+    damping: [0.5, 0.85, 0.95]
+  G3:
+    connector_databases: [1, 3, 5]
+    connector_seeds: [2, 3]
+    seed_threshold: [0.3, 0.5]
+    max_path_length: [2, 3]
+    gamma: [0.9, 0.95, 0.99]

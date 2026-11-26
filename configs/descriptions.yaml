@@ -1,0 +1,27 @@
+# Table descriptions with a local LLM (implementation_plan.md, §10).
+
+output_dir: data/descriptions   # one JSON Lines cache per collection; runs resume from it
+max_columns: 40                 # columns listed in full in a prompt; the rest are counted
+log_every: 25
+
+llm:
+  url: http://localhost:11434/api/chat
+  model: qwen2.5:7b
+  temperature: 0                # deterministic output
+  seed: 42
+  max_tokens: 160               # a 70-word description needs about 100 tokens
+  think: false                  # disable reasoning traces for models that support them
+  timeout: 300
+
+# Pause after every `every_calls` descriptions so the local GPU can cool down.
+cooldown:
+  every_calls: 20
+  seconds: 8
+
+# Matching questions to descriptions (src/retrievers/descriptions.py): the same sentence encoder
+# as SXFMR, applied to "<table name>: <description>" texts, which fit its input limit.
+retrieval:
+  model: sentence-transformers/all-mpnet-base-v2
+  max_length: 256
+  batch_size: 64
+  device: auto

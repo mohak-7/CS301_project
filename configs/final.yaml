@@ -1,0 +1,177 @@
+# Frozen GraphRAG settings, written by src/tune.py (implementation_plan.md, §6.1).
+params:
+  bm25:
+    G1:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      beta: 0.3
+    G2:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.7
+      num_seeds: 3
+      damping: 0.85
+    G3:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.7
+      num_seeds: 3
+      damping: 0.85
+      connector_databases: 3
+      connector_seeds: 3
+      seed_threshold: 0.5
+      max_path_length: 2
+      gamma: 0.95
+  sxfmr:
+    G1:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      beta: 0.2
+    G2:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.7
+      num_seeds: 5
+      damping: 0.85
+    G3:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.7
+      num_seeds: 5
+      damping: 0.85
+      connector_databases: 1
+      connector_seeds: 2
+      seed_threshold: 0.3
+      max_path_length: 2
+      gamma: 0.9
+  hybrid:
+    G1:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      beta: 0.2
+    G2:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.7
+      num_seeds: 3
+      damping: 0.5
+    G3:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.7
+      num_seeds: 3
+      damping: 0.5
+      connector_databases: 3
+      connector_seeds: 3
+      seed_threshold: 0.3
+      max_path_length: 3
+      gamma: 0.9
+  hybrid_rr:
+    G1:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      beta: 0.3
+    G2:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.9
+      num_seeds: 3
+      damping: 0.85
+    G3:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.9
+      num_seeds: 3
+      damping: 0.85
+      connector_databases: 1
+      connector_seeds: 3
+      seed_threshold: 0.5
+      max_path_length: 2
+      gamma: 0.95
+  hybrid_desc:
+    G1:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      beta: 0.1
+    G2:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.9
+      num_seeds: 3
+      damping: 0.85
+    G3:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.9
+      num_seeds: 3
+      damping: 0.85
+      connector_databases: 5
+      connector_seeds: 2
+      seed_threshold: 0.3
+      max_path_length: 2
+      gamma: 0.95
+  hybrid_desc_rr:
+    G1:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      beta: 0.3
+    G2:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.9
+      num_seeds: 3
+      damping: 0.95
+    G3:
+      pagerank_iterations: 100
+      pagerank_tolerance: 1.0e-08
+      cutoff: 100
+      alpha: 0.9
+      num_seeds: 3
+      damping: 0.95
+      connector_databases: 1
+      connector_seeds: 2
+      seed_threshold: 0.3
+      max_path_length: 2
+      gamma: 0.9
+ranking:
+  hier_databases: 5
+  seed_top_tables: 3
+frozen:
+  date: '2026-11-15'
+  note: Tuned on training questions only (D7); frozen before any GraphRAG test run.
+  sample_size: 500
+  datasets:
+  - spider
+  - bird
+frozen_extension:
+  hybrid,hybrid_rr:
+    date: '2026-11-15'
+    note: Tuned on training questions only (D7); frozen before any GraphRAG test run.
+    sample_size: 500
+    datasets:
+    - spider
+    - bird
+  hybrid_desc,hybrid_desc_rr:
+    date: '2026-11-15'
+    note: Tuned on training questions only (D7); frozen before any GraphRAG test run.
+    sample_size: 500
+    datasets:
+    - spider
+    - bird

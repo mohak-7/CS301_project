@@ -1,0 +1,6 @@
+dataset,sxfmr,sxfmr-G2,hybrid_rr-G1,hybrid_desc_rr-G1,DBCopilot (reported)
+spider,79.87,82.94,93.48,95.78,91.63
+bird,64.71,68.97,82.2,87.24,85.83
+fiben,24.69,28.4,29.82,37.89,41.12
+spider_syn,66.26,69.97,72.72,77.89,70.35
+spider_realistic,79.16,82.08,89.2,91.11,87.93

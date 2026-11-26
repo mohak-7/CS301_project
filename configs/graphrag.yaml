@@ -1,0 +1,21 @@
+# GraphRAG defaults (implementation_plan.md, §5.3-§5.5). These are untuned starting values used
+# for Phase 5 smoke tests; Phase 6 tunes them on training questions and freezes the result in
+# configs/final.yaml before any test set is run (D7).
+
+params:
+  beta: 0.3                 # G1 neighbour weight
+  alpha: 0.7                # G2/G3 semantic weight
+  num_seeds: 10             # G2/G3 restart-vector size (N)
+  damping: 0.85             # G2/G3 PageRank damping
+  pagerank_iterations: 100
+  pagerank_tolerance: 1.0e-8
+  connector_databases: 3    # G3 B
+  connector_seeds: 3        # G3 M
+  seed_threshold: 0.3       # G3 tau
+  max_path_length: 2        # G3 L_max
+  gamma: 0.95               # G3 connector factor
+  cutoff: 100               # tables kept before database ranking (D8)
+
+ranking:
+  hier_databases: 5         # R-hier: databases whose tables are listed (D13)
+  seed_top_tables: 3        # R-seed-top3: tables averaged per database (D13)
